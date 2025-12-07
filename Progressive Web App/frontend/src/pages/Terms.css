@@ -1,0 +1,202 @@
+
+/* General Page */
+.terms-page {
+    padding: 80px 20px 30px 20px; /* top padding increased to 50px */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+  }
+  
+
+  /* Header */
+  .terms-header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .terms-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .terms-header p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .terms-header small {
+    font-size: 0.85rem;
+    color: gray;
+  }
+  
+  /* Tools Buttons */
+  .terms-tools {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .terms-tools button, .dark-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .terms-tools button:hover, .dark-toggle:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dark Mode Toggle */
+  .dark-toggle {
+    margin: 10px auto;
+    display: block;
+  }
+  
+  /* Search Bar */
+  .terms-search {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .terms-search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    transition: border 0.2s ease;
+  }
+  
+  .terms-search input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Terms Sections */
+  .terms-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .terms-section {
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #f9f9f9;
+  }
+  
+  .terms-section:hover {
+    background: #e9ecef;
+  }
+  
+  .terms-section.open {
+    background: #dbe2ef;
+  }
+  
+  .dark-mode .terms-section {
+    border-color: #444;
+    background: #1f1f1f;
+  }
+  
+  .dark-mode .terms-section:hover {
+    background: #2a2a2a;
+  }
+  
+  .dark-mode .terms-section.open {
+    background: #3a3a3a;
+  }
+  
+  .terms-section h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .terms-section p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Sticky Contact */
+  .terms-contact {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .terms-contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .terms-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .terms-tools {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .terms-section {
+      padding: 12px 15px;
+    }
+  
+    .terms-header h1 {
+      font-size: 1.7rem;
+    }
+  
+    .terms-header p {
+      font-size: 0.95rem;
+    }
+  
+    .terms-search input {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .terms-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .terms-tools button, .dark-toggle {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+  
+    .terms-section h3 {
+      font-size: 1rem;
+    }
+  
+    .terms-section p {
+      font-size: 0.9rem;
+    }
+  }
+  

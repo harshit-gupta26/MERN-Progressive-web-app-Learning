@@ -1,0 +1,197 @@
+.footer-section {
+    background-color: #1f2937; /* dark gray */
+    color: #f3f4f6; /* light text */
+    padding: 3rem 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .footer-about {
+    flex: 1 1 300px;
+  }
+  
+  .footer-about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-socials a {
+    margin-right: 0.8rem;
+    color: #f3f4f6;
+    transition: color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    color: #10b981; /* green accent */
+  }
+  
+  .footer-links-support {
+    display: flex;
+    flex: 2 1 500px;
+    gap: 4rem;
+  }
+  
+  .footer-links h4,
+  .footer-support h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-links ul,
+  .footer-support ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-support li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a,
+  .footer-support a {
+    color: #f3f4f6;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover,
+  .footer-support a:hover {
+    color: #10b981;
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #374151;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .footer-links-support {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  .footer-links-support {
+    display: flex;
+    justify-content: flex-start; /* aligns items to the left */
+    gap: 4rem; /* space between Quick Links and Support */
+    flex-wrap: wrap; /* makes it responsive on smaller screens */
+  }
+  
+  .footer-links, 
+  .footer-support {
+    flex: 1; /* optional: allows them to grow equally */
+  }
+  
+  .footer-links ul, 
+  .footer-support ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li,
+  .footer-support ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a,
+  .footer-support ul li a {
+    text-decoration: none;
+    color: #fff; /* adjust based on your footer background */
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover,
+  .footer-support ul li a:hover {
+    color: #10b981; /* hover color */
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .footer-links-support {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer-support {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .footer-support h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .footer-support ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-support ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-support ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-support ul li a:hover {
+    color: #4f46e5; /* Accent color on hover */
+  }
+  

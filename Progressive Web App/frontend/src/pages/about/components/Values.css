@@ -1,0 +1,80 @@
+.values-section {
+  padding: 60px 20px;
+  background-color: #f5f8ff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.values-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.values-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.value-card {
+  background-color: #fff;
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .values-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.values-header p {
+  font-size: 1.5rem; /* font size increase kiya 1.2rem se 1.5rem */
+  color: #555;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .values-header p {
+    font-size: 1.3rem; /* mobile me thoda chhota */
+  }
+}

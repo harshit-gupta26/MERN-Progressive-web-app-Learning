@@ -1,0 +1,36 @@
+.view-all-courses-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f3f4f6; /* light gray background */
+  }
+  
+  .view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    background-color: #10b981; /* green */
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #059669; /* darker green */
+    transform: translateY(-2px);
+  }
+  
+  .arrow-icon {
+    margin-left: 0.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .view-all-btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.95rem;
+    }
+  }
+  

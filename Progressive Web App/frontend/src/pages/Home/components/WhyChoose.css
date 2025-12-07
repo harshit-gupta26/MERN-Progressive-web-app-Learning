@@ -1,0 +1,243 @@
+/* WhyChoose.css */
+
+/* Section Styling */
+.why-choose-section {
+    padding: 4rem 2rem;
+    background-color: #f9fafb;
+    text-align: center;
+  }
+  
+  /* Section Title */
+  .why-choose-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .why-choose-section p {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Grid Layout */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Feature Card */
+  .feature-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Feature Icon */
+  .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Icon Colors */
+  .icon-video {
+    color: #3b82f6; /* Blue */
+  }
+  
+  .icon-certificate {
+    color: #10b981; /* Green */
+  }
+  
+  .icon-instructor {
+    color: #8b5cf6; /* Purple */
+  }
+  
+  .icon-clock {
+    color: #facc15; /* Yellow */
+  }
+  
+  /* Hover effect for icon */
+  .feature-card:hover .feature-icon {
+    transform: scale(1.2);
+  }
+  
+  /* Feature Title */
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Feature Description */
+  .feature-desc {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 640px) {
+    .why-choose-section {
+      padding: 3rem 1rem;
+    }
+  }
+  
+
+
+.why-choose-section {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* ✅ Added font family */
+}
+
+.why-choose-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.why-choose-section p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #4f46e5;
+}
+
+.feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+.hero-subscribe {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Heading */
+.hero-subscribe h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* Input field */
+.hero-subscribe input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+  max-width: 80%; /* ensures input doesn't overflow on small screens */
+}
+
+.hero-subscribe input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00bfff;
+}
+
+/* Subscribe button */
+.hero-subscribe .btn-primary {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem; /* added for stacked layout on mobile */
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .hero-subscribe h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero-subscribe input {
+    width: 200px;
+    font-size: 0.95rem;
+  }
+
+  .hero-subscribe .btn-primary {
+    padding: 0.55rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-subscribe {
+    display: flex;
+    flex-direction: column; /* stack input and button */
+    align-items: center;
+  }
+
+  .hero-subscribe h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero-subscribe input {
+    width: 180px;
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-subscribe .btn-primary {
+    width: 60%;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+

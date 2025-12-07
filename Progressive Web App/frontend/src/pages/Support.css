@@ -1,0 +1,291 @@
+.support-page {
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 20px;
+  }
+  
+  /* Header */
+  .support-header h1 {
+    font-size: 2.5rem;
+  }
+  .support-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Support Methods */
+  .support-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .support-card {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .support-card h3 {
+    margin: 15px 0 10px;
+  }
+  
+  /* FAQ Section */
+  .faq-section input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .faq-item {
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Categories */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .category-btn {
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .category-btn:hover {
+    background-color: #3730a3;
+  }
+  
+  /* Guides */
+  .support-guides ul {
+    list-style: none;
+    padding: 0;
+  }
+  .support-guides li {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Form */
+  .support-contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .support-contact-form input,
+  .support-contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .support-contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4f46e5;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Live Chat */
+  .live-chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+  }
+  .chat-toggle {
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: #4f46e5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .chat-box {
+    margin-top: 10px;
+    width: 300px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  .chat-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .chat-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4f46e5;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Support.css */
+/* .support-page {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+  } */
+
+  .support-page {
+    margin-top: 80px; 
+    padding: 2rem; 
+    font-family: 'Poppins', sans-serif; 
+    padding-top: 80px; 
+
+  }
+  
+  
+  /* Support methods */
+  .support-methods {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically on mobile */
+    gap: 1rem;
+  }
+  
+  .support-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* FAQ section */
+  .faq-section input {
+    width: 100%; /* Full width input on mobile */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .category-btn {
+    flex: 1 1 auto;
+    padding: 0.5rem;
+  }
+  
+  /* Guides / PDFs */
+  .support-guides iframe {
+    width: 100%;
+    height: 250px; /* Mobile default */
+  }
+  
+  /* Contact form */
+  .support-contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Live chat widget */
+  .live-chat-widget {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  /* Announcements */
+  .support-announcements ul {
+    padding-left: 1rem;
+  }
+  
+  /* Media Queries for tablets and desktop */
+  @media (min-width: 768px) {
+    .support-methods {
+      flex-direction: row; /* Cards side by side on tablets */
+      justify-content: space-between;
+    }
+  
+    .faq-categories {
+      justify-content: flex-start;
+    }
+  
+    .support-guides iframe {
+      height: 400px;
+    }
+  
+    .support-contact-form form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .support-contact-form input,
+    .support-contact-form textarea {
+      flex: 1 1 calc(50% - 1rem);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .support-page {
+      padding: 2rem 4rem;
+    }
+  
+    .support-methods {
+      gap: 2rem;
+    }
+  }
+  
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 300px;
+  }
+  
+  @media (min-width: 768px) {
+    .video-wrapper iframe {
+      height: 450px;
+    }
+
+    .support-page {
+        margin-top: 60px; /* mobile me thoda kam space */
+      }
+  }
+  
+
+  
+  

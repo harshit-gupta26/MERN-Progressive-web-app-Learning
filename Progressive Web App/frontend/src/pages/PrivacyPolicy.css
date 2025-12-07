@@ -1,0 +1,180 @@
+.privacy-page {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  /* Header */
+  .privacy-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .privacy-header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  .privacy-header small {
+    color: #777;
+  }
+  
+  /* Tools */
+  .privacy-tools {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .privacy-tools button {
+    border: none;
+    background: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+  }
+  
+  .privacy-tools button:hover {
+    background: #0056b3;
+  }
+  
+  /* Search Bar */
+  .privacy-search {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 8px 15px;
+    background: #f9f9f9;
+  }
+  
+  .privacy-search svg {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .privacy-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+  }
+  
+  /* Collapsible Sections */
+  .policy-section {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .policy-section h3 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .policy-section p {
+    margin-top: 8px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Sticky Contact */
+  .privacy-contact {
+    position: sticky;
+    bottom: 10px;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+  
+  .privacy-contact a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .privacy-header h1 {
+      font-size: 2rem;
+    }
+  
+    .privacy-tools {
+      flex-direction: column;
+    }
+  
+    .privacy-search {
+      width: 90%;
+    }
+  }
+  
+
+  .dark-mode {
+    background-color: #121212;
+    color: #f2f2f2;
+  }
+  
+  .dark-mode .privacy-search {
+    background-color: #333;
+  }
+  
+  .dark-mode .privacy-tools button,
+  .dark-mode .dark-toggle {
+    background-color: #555;
+    color: white;
+  }
+  
+
+
+
+
+
+  .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .trust-badges .badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.2s;
+  }
+  
+  .trust-badges .badge:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+  }
+  
+  .dark-mode .trust-badges .badge {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  @media (max-width: 600px) {
+    .trust-badges {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

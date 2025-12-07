@@ -1,0 +1,140 @@
+.team-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.team-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team-header p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-card {
+  background-color: #fff;
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.team-card .role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.team-card .description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.team-card .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team-header h2 {
+  font-size: 3.5rem; /* 3rem se increase */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team-header p {
+  font-size: 1.6rem; /* 1.3rem se increase */
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.team-card h3 {
+  font-size: 1.6rem; /* 1.4rem se increase */
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.team-card .role {
+  font-size: 1.1rem; /* 1rem se increase */
+  font-weight: 500;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.team-card .description {
+  font-size: 1.05rem; /* 0.95rem se increase */
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.team-card .social-icons {
+  font-size: 1.4rem; /* 1.2rem se increase */
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .team-header h2 {
+    font-size: 2.8rem;
+  }
+  .team-header p {
+    font-size: 1.4rem;
+  }
+  .team-card h3 {
+    font-size: 1.4rem;
+  }
+  .team-card .role {
+    font-size: 1rem;
+  }
+  .team-card .description {
+    font-size: 1rem;
+  }
+}

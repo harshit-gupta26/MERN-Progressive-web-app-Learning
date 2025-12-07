@@ -1,0 +1,193 @@
+/* Section styling */
+.contact-form-section {
+  /* padding: 70px 20px; */
+  background: linear-gradient(
+    135deg,
+    #0a1f44,
+    #003366
+  ); /* Dark blue gradient */
+  font-family: "Poppins", sans-serif; /* Font family */
+  color: #fff; /* Default text color white */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 500px; /* Reduce the overall width of the section */
+  /* margin: 0 auto;  */
+  padding: 25px 15px; /* Top/Bottom 40px, Left/Right 15px */
+  margin-right: 1000px;
+  margin-top: 50px; /* Section ke upar space */
+  margin-bottom: 50px; /* Section ke niche space */
+  width: 80%; /* Form section ki width */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Text and content center align */
+
+  padding: 0px 450px 5px 450px;
+}
+
+.contact-form-section h2 {
+  font-size: 2rem; /* Previously 2.8rem */
+}
+
+.contact-form-section p,
+.contact-form-section input,
+.contact-form-section textarea,
+.contact-form-section select {
+  font-size: 0.95rem; /* Slightly smaller text */
+}
+
+/* Container */
+.contact-form-container {
+  max-width: 500px; /* Previously 700px, reduced */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading */
+.contact-form-container h2 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Form Groups */
+.form-group {
+  position: relative;
+}
+
+/* Icons inside inputs */
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #1ec6ff;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+/* Input, Select, Textarea */
+.contact-form-section input,
+.contact-form-section textarea,
+.contact-form-section select {
+  width: 100%; /* Full width of the container */
+  padding: 14px 20px 14px 50px;
+  max-width: 400px; /* Maximum width */
+  margin: 0 auto; /* Center align */
+  display: block; /* Required for margin auto to work */
+  box-sizing: border-box; /* Include padding in width */
+  padding: 12px 15px; /* Input padding */
+  border-radius: 12px;
+  border: none;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Textarea height (optional) */
+.contact-form-section textarea {
+  min-height: 120px; /* Adjust height as needed */
+}
+
+/* Placeholder color */
+.form-group input::placeholder,
+.form-group select::placeholder,
+.form-group textarea::placeholder {
+  color: #e0e0e0;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(30, 198, 255, 0.5);
+}
+
+.form-icon:hover {
+  color: #ffffff;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  min-height: 140px;
+}
+
+/* Character count */
+.char-count {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #b0e0ff;
+  margin-top: 4px;
+}
+
+/* Submit Button */
+.send-btn {
+  padding: 16px 0;
+  background-color: #1ec6ff;
+  color: #0a1f44;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.send-btn:hover {
+  background-color: #00aaff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding-left: 45px;
+  }
+
+  .contact-form-section {
+    margin-right: 15px; /* Mobile me kam space */
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+/* Select styling */
+.form-group select {
+  /* color: #004aad; Text color */
+  background-color: rgba(255, 255, 255, 0.1); /* Background of select box */
+  padding: 14px 20px 14px 50px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  appearance: none; /* Removes default arrow style on some browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Option styling */
+.form-group select option {
+  color: #0a1f44; /* Text color inside dropdown */
+  background-color: #ffffff; /* Background color of dropdown options */
+}

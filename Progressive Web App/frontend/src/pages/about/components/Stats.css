@@ -1,0 +1,126 @@
+.stats-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* spacing between stats */
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.stats-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* spacing between stats */
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff; /* numbers blue */
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #555; /* text normal color */
+}
+
+.stats-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif; /* Font family added */
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* spacing between stats */
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff; /* numbers blue */
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif; /* font family for numbers */
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #555; /* description text color */
+  font-family: "Poppins", sans-serif; /* font family for text */
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.stats-section {
+  /* padding: 60px 20px;  */
+  padding: 0px 0px 150px;
+  background-color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* spacing between stats */
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+.stat {
+  margin-bottom: 30px; /* bottom space added for each stat */
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff; /* numbers blue */
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #555; /* description text color */
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

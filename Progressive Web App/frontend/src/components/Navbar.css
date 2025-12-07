@@ -1,0 +1,446 @@
+/* ========================
+   🌐 Navbar Container
+======================== */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 7px;
+}
+
+/* ========================
+   🧭 Navbar Inner Container
+======================== */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ========================
+   🎓 Logo Section
+======================== */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-logo-icon {
+  font-size: 1.8rem;
+  color: #2563eb;
+}
+
+.nav-logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+}
+
+/* 🌙 Dark Theme Ready */
+body.dark .nav-logo-text {
+  color: #f8fafc;
+}
+
+/* ========================
+   🔗 Navigation Links
+======================== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a {
+  text-decoration: none;
+  /* color: #333; */
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #e0ebff;
+  color: #2563eb;
+}
+
+/* ========================
+   🟣 Auth Buttons
+======================== */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 🟢 Login Button */
+.login-btn {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #1e293b;
+}
+.login-btn:hover {
+  background-color: #334155;
+}
+
+/* 🔵 Signup Button */
+.signup-btn {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+.signup-btn:hover {
+  background-color: #334155;
+}
+
+/* ========================
+   🟢 Start Learning Button
+======================== */
+.nav-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ========================
+   🍔 Hamburger Menu
+======================== */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+  z-index: 1200;
+}
+
+/* ========================
+   📚 Tutorials Dropdown Button
+======================== */
+.tutorials-btn-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.tutorials-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  /* padding: 8px 16px; */
+  padding: 8px 100px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tutorials-btn:hover {
+  background: linear-gradient(90deg, #00bfff, #38bdf8);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.tutorial-icon {
+  font-size: 1.1rem;
+}
+
+/* ========================
+   🧩 Tutorials Popup
+======================== */
+.tutorials-popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111827;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1.2rem;
+  width: 90%;
+  max-width: 650px;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.3s ease;
+}
+
+.tutorial-card {
+  background: #1f2937;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tutorial-card:hover {
+  background: #2563eb;
+  transform: translateY(-4px);
+}
+
+/* ========================
+   ✨ Animations
+======================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================
+   📱 Responsive Design
+======================== */
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 30px;
+    gap: 25px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .auth-buttons,
+  .desktop-btn {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .tutorials-btn-container {
+    padding: 0.8rem 2rem 0.8rem 0rem;
+  }
+
+  .tutorials-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .tutorials-popup {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    width: 95%;
+  }
+
+  .tutorial-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  .nav-logo-icon {
+    font-size: 1.6rem;
+  }
+
+  .nav-logo-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tutorials-btn-container {
+    padding: 0.7rem 2.5rem 0.7rem 0rem;
+  }
+
+  .tutorials-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .tutorials-popup {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .tutorial-card {
+    padding: 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-logo {
+    gap: 6px;
+  }
+
+  .nav-logo-icon {
+    font-size: 1.4rem;
+  }
+
+  .nav-logo-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* ==========================
+   🟣 Auth Buttons (Login / Signup)
+========================== */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 20px;
+}
+
+/* ✨ Login Button */
+.login-btn {
+  padding: 8px 18px;
+  background: transparent;
+  /* color: #333; */
+  font-weight: 500;
+  border: 2px solid #6c63ff; /* violet border */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #6c63ff;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+}
+
+/* 🌈 Signup Button */
+.signup-btn {
+  padding: 8px 18px;
+  background: #6c63ff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #554bdb;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+  .auth-buttons {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .login-btn,
+  .signup-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/* 🌐 Responsive: Mobile View */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+}

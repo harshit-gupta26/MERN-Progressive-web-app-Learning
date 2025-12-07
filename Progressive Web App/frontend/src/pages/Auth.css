@@ -1,0 +1,211 @@
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f172a;
+    min-height: 100vh;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+  }
+  
+  .auth-container {
+    display: flex;
+    background-color: #111827;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .auth-left {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .auth-left h1 span {
+    color: #38bdf8;
+  }
+  
+  .social-login-box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  
+  .social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1f2937;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .social-btn:hover {
+    background: #374151;
+  }
+  
+  .or-divider {
+    margin: 20px 0;
+    text-align: center;
+    opacity: 0.7;
+  }
+  
+  .email-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .email-btn:hover {
+    background: #1e293b;
+  }
+  
+  .auth-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .terms-text {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+  
+  .terms-text a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .auth-container {
+      flex-direction: column;
+    }
+  
+    .auth-right {
+      display: none;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ===============================
+   🔹 Auth Buttons (Login/Signup)
+================================ */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* 🌐 Desktop styles */
+  .login-btn,
+  .signup-btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* 🔹 Login Button */
+  .login-btn {
+    /* color: #0f172a; */
+    color: #fff;
+
+    border: 1.5px solid #0f172a;
+    /* background-color: transparent; */
+    background-color: #0f172a;
+
+  }
+  
+  .login-btn:hover {
+    /* background-color: #0f172a; */
+    background-color: #1d4ed8;
+
+    color: #fff;
+  }
+  
+  /* 🔹 Signup Button */
+  .signup-btn {
+    /* background-color: #2563eb; */
+    background-color: #0f172a;
+
+    color: #fff;
+    border: 1.5px solid #2563eb;
+  }
+  
+  .signup-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* 📱 Responsive for tablets and mobiles */
+  @media (max-width: 768px) {
+    .auth-buttons {
+      gap: 10px;
+    }
+  
+    .login-btn,
+    .signup-btn {
+      padding: 7px 14px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .auth-buttons {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+      /* width: 100%; */
+    }
+  
+    .login-btn,
+    .signup-btn {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+  

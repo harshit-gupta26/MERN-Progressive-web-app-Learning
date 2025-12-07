@@ -1,0 +1,85 @@
+.ourstory-section {
+  padding: 60px 20px;
+  background-color: #e1f1f7;
+  font-family: "Poppins", sans-serif;
+  color: rgb(93, 92, 92);
+}
+
+.ourstory-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* image aur text ke beech space */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ourstory-image {
+  flex: 1;
+  text-align: center;
+}
+
+.ourstory-image img {
+  width: 100%;
+  /* max-width: 500px; */
+  max-width: 700px; /* 🔹 width increased */
+  /* border-radius: 15px; */
+  border-radius: 20px;
+  object-fit: cover;
+  max-width: 600px; /* 🔹 width increased */
+  /* height: 420px;      */
+  height: 450px; /* 🔹 height adjusted proportionally */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* optional nice shadow */
+}
+
+.ourstory-content {
+  flex: 1;
+  /* padding-left: 20px; */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 60px; /* right side padding for balance */
+  padding-left: 40px; /* thoda aur space text ke left se */
+}
+
+.ourstory-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ourstory-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ourstory-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ourstory-image img {
+    max-width: 95%;
+    height: auto; /* mobile ke liye automatic adjust */
+    margin-bottom: 25px;
+  }
+
+  .ourstory-content {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .ourstory-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .ourstory-content p {
+    font-size: 1rem;
+  }
+}
+
+p {
+  text-align: justify;
+}

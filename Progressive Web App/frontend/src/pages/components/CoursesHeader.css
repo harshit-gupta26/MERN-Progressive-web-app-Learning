@@ -1,0 +1,264 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.courses-header {
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a); /* Blue gradient */
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Decorative background shapes */
+.courses-header::before,
+.courses-header::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.courses-header::before {
+  width: 400px;
+  height: 400px;
+  background: #93c5fd;
+  top: -100px;
+  left: -100px;
+}
+
+.courses-header::after {
+  width: 300px;
+  height: 300px;
+  background: #60a5fa;
+  bottom: -80px;
+  right: -80px;
+}
+
+.courses-header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.courses-icon {
+  font-size: 4rem;
+  color: #facc15; /* golden yellow */
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.courses-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.courses-header p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .courses-header {
+    padding: 4rem 1.5rem;
+  }
+
+  .courses-icon {
+    font-size: 3.5rem;
+  }
+
+  .courses-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .courses-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-icon {
+    font-size: 3rem;
+  }
+
+  .courses-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .courses-header p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+/* CoursesHeader.css */
+
+.courses-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f9fafb; /* Example background */
+  padding: 2rem;
+  /* Default top margin for large screens */
+  margin-top: 80px;
+}
+
+/* Responsive adjustments */
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .courses-header {
+    margin-top: 60px;
+    padding: 1.5rem;
+  }
+}
+
+/* Small devices (mobile) */
+@media (max-width: 576px) {
+  .courses-header {
+    margin-top: 40px;
+    padding: 1rem;
+  }
+}
+
+/* Optional: adjust icon size for responsiveness */
+.courses-icon {
+  font-size: 3rem;
+  /* color: #4f46e5; */
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .courses-icon {
+    font-size: 2.2rem;
+  }
+}
+
+
+
+
+
+.courses-icon {
+  font-size: 6vw; /* Width ke proportion me size adjust hoga */
+  margin-bottom: 1rem;
+  max-font-size: 3rem; 
+}
+
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .courses-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Small devices (mobiles) */
+@media (max-width: 576px) {
+  .courses-icon {
+    font-size: 2rem;
+  }
+}
+
+.courses-header {
+  padding-top: 3rem;       
+  padding-bottom: 20rem;   /* Bottom padding kam kiya */
+  text-align: center;
+  background-color: #f9fafb; 
+}
+
+.courses-header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem; 
+}
+
+.courses-icon {
+  font-size: 14rem;   
+  margin-bottom: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .courses-header {
+    padding-bottom: 18rem;
+  }
+  .courses-icon {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-header {
+    padding-bottom: 15rem;
+  }
+  .courses-icon {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .courses-header {
+    padding-bottom: 12rem;
+  }
+  .courses-icon {
+    font-size: 8rem;
+  }
+}
+
+
+.courses-header {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* transparent black overlay */
+  z-index: 1;
+}
+
+.courses-header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.courses-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+

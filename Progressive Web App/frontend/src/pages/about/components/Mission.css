@@ -1,0 +1,150 @@
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  gap: 40px; /* text aur image ke beech space */
+}
+
+.mission-content {
+  flex: 1;
+  text-align: left;
+}
+
+.mission-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.mission-banner {
+  flex: 1;
+  text-align: right;
+}
+
+.mission-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-right: 20px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .mission-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mission-banner {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .mission-banner img {
+    padding-right: 0;
+  }
+}
+
+.mission-section {
+  padding: 60px 20px; /* top/bottom 60px, left/right 20px */
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+}
+
+.mission-content {
+  max-width: 600px; /* width control karne ke liye */
+  text-align: left;
+  padding-left: 40px; /* left side padding added */
+}
+
+.mission-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .mission-content {
+    padding-left: 20px; /* mobile me thoda kam padding */
+  }
+}
+
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  gap: 40px; /* text aur image ke beech space */
+}
+
+.mission-content {
+  flex: 1;
+  text-align: left;
+}
+
+.mission-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.mission-banner {
+  flex: 1;
+  text-align: right;
+}
+
+.mission-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .mission-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mission-banner {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.mission-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-right: 80px; /* right side padding added */
+}
+
+@media (max-width: 768px) {
+  .mission-banner img {
+    padding-right: 0; /* mobile me remove */
+  }
+}

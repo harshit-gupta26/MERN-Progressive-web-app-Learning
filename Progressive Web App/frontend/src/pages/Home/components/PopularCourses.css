@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Layout */
+.popular-courses-section {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.popular-courses-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.popular-courses-section p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+
+.course-price {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.course-instructor {
+  color: #666;
+  margin: 0 15px;
+  font-size: 0.9rem;
+}
+
+.course-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  font-size: 0.9rem;
+}
+
+.star-icon {
+  margin-right: 2px;
+}
+
+.enroll-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 90%;
+  margin: 10px auto 20px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.enroll-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.modal-details p {
+  margin: 6px 0;
+  color: #444;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn,
+.confirm-btn {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.cancel-btn:hover {
+  background-color: #b0b0b0;
+}
+
+.confirm-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-icon {
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.star-icon.filled {
+  color: #facc15; /* gold */
+}
+
+.star-icon.half {
+  color: #facc15;
+}
+
+.star-icon.empty {
+  color: #d1d5db; /* gray */
+}
+
+.rating-value {
+  margin-left: 4px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Modal stars too */
+.modal-details .star-icon {
+  font-size: 1.2rem;
+}
